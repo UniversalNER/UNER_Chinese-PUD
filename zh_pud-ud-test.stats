@@ -2,7 +2,7 @@
   "dataset_id": "zh_pud-ud-test",
   "num_documents": 34,
   "num_annotated_documents": 34,
-  "num_annotations": 1434,
+  "num_annotations": 1436,
   "num_annotators": 2,
   "annotator_ids": [
     "cdeng73",
@@ -12,22 +12,22 @@
   "num_sentences": 1000,
   "num_tokens": 21415,
   "label_distribution": {
-    "LOC": 511,
+    "LOC": 512,
     "PER": 473,
-    "ORG": 153
+    "ORG": 154
   },
   "pairwise_f1": {
     "ref:cdeng73, pred:linpq": {
       "num_common_annotated_docs": 1,
       "LOC": {
-        "precision": 0.42857142857142855,
+        "precision": 0.375,
         "recall": 0.6,
-        "f1": 0.5
+        "f1": 0.4615384615384615
       },
       "ORG": {
         "precision": 1.0,
-        "recall": 0.7,
-        "f1": 0.8235294117647058
+        "recall": 0.8,
+        "f1": 0.888888888888889
       },
       "PER": {
         "precision": 1.0,
@@ -37,14 +37,14 @@
     },
     "average": {
       "LOC": {
-        "precision": 0.42857142857142855,
+        "precision": 0.375,
         "recall": 0.6,
-        "f1": 0.5
+        "f1": 0.4615384615384615
       },
       "ORG": {
         "precision": 1.0,
-        "recall": 0.7,
-        "f1": 0.8235294117647058
+        "recall": 0.8,
+        "f1": 0.888888888888889
       },
       "PER": {
         "precision": 1.0,
