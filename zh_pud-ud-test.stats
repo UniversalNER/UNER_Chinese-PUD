@@ -2,13 +2,15 @@
   "dataset_id": "zh_pud-ud-test",
   "num_documents": 34,
   "num_annotated_documents": 34,
-  "num_annotations": 1436,
-  "num_annotators": 2,
+  "num_annotations": 1891,
+  "num_annotators": 4,
   "annotator_ids": [
     "cdeng73",
-    "linpq"
+    "cheng",
+    "linpq",
+    "shuheng"
   ],
-  "num_docs_with_multiple_annotators": 1,
+  "num_docs_with_multiple_annotators": 8,
   "num_sentences": 1000,
   "num_tokens": 21415,
   "label_distribution": {
@@ -17,6 +19,24 @@
     "ORG": 154
   },
   "pairwise_f1": {
+    "ref:cdeng73, pred:cheng": {
+      "num_common_annotated_docs": 1,
+      "LOC": {
+        "precision": 0.4,
+        "recall": 0.8,
+        "f1": 0.5333333333333333
+      },
+      "ORG": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9
+      },
+      "PER": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104
+      }
+    },
     "ref:cdeng73, pred:linpq": {
       "num_common_annotated_docs": 1,
       "LOC": {
@@ -35,21 +55,93 @@
         "f1": 0.9655172413793104
       }
     },
-    "average": {
+    "ref:cdeng73, pred:shuheng": {
+      "num_common_annotated_docs": 1,
       "LOC": {
-        "precision": 0.375,
-        "recall": 0.6,
-        "f1": 0.4615384615384615
+        "precision": 0.2857142857142857,
+        "recall": 0.4,
+        "f1": 0.3333333333333333
       },
       "ORG": {
-        "precision": 1.0,
+        "precision": 0.8,
         "recall": 0.8,
-        "f1": 0.888888888888889
+        "f1": 0.8000000000000002
       },
       "PER": {
-        "precision": 1.0,
-        "recall": 0.9333333333333333,
-        "f1": 0.9655172413793104
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1": 0.8571428571428571
+      }
+    },
+    "ref:cheng, pred:linpq": {
+      "num_common_annotated_docs": 8,
+      "LOC": {
+        "precision": 0.821917808219178,
+        "recall": 0.6741573033707865,
+        "f1": 0.7407407407407406
+      },
+      "ORG": {
+        "precision": 0.6530612244897959,
+        "recall": 0.5714285714285714,
+        "f1": 0.6095238095238094
+      },
+      "PER": {
+        "precision": 0.9418604651162791,
+        "recall": 0.9101123595505618,
+        "f1": 0.9257142857142857
+      }
+    },
+    "ref:cheng, pred:shuheng": {
+      "num_common_annotated_docs": 7,
+      "LOC": {
+        "precision": 0.7843137254901961,
+        "recall": 0.5063291139240507,
+        "f1": 0.6153846153846154
+      },
+      "ORG": {
+        "precision": 0.5666666666666667,
+        "recall": 0.6538461538461539,
+        "f1": 0.6071428571428571
+      },
+      "PER": {
+        "precision": 0.9285714285714286,
+        "recall": 0.8666666666666667,
+        "f1": 0.896551724137931
+      }
+    },
+    "ref:linpq, pred:shuheng": {
+      "num_common_annotated_docs": 7,
+      "LOC": {
+        "precision": 0.8627450980392157,
+        "recall": 0.6666666666666666,
+        "f1": 0.7521367521367521
+      },
+      "ORG": {
+        "precision": 0.6666666666666666,
+        "recall": 0.9302325581395349,
+        "f1": 0.7766990291262136
+      },
+      "PER": {
+        "precision": 0.9857142857142858,
+        "recall": 0.9583333333333334,
+        "f1": 0.971830985915493
+      }
+    },
+    "average": {
+      "LOC": {
+        "precision": 0.5882818195771459,
+        "recall": 0.6078588473269172,
+        "f1": 0.5727445394112061
+      },
+      "ORG": {
+        "precision": 0.7643990929705216,
+        "recall": 0.7759178805690433,
+        "f1": 0.7637090974469616
+      },
+      "PER": {
+        "precision": 0.9632038504131528,
+        "recall": 0.900296504369538,
+        "f1": 0.9303790559448646
       }
     }
   }
